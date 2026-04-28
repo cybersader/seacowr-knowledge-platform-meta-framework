@@ -36,7 +36,7 @@ the frontmatter while the actual content lives in user-readable docs.
 
 - Don't invoke the `seacow-scaffolder` agent against this repo — its template-scaffolding flow is for *new* projects. This repo is its source-of-truth, not a target.
 - Don't rewrite migrated cyberbase content without flagging diffs. Reference the source frontmatter line and explain the editorial change in the commit body.
-- Don't commit with AI attribution. The maintainer's global commit-msg hook will reject `Co-Authored-By: Claude`, `Generated with`, `noreply@anthropic.com`, etc.
+- Don't commit with AI / LLM attribution. No `Co-Authored-By:` trailer for an AI tool, no "generated with…" footer. The maintainer's global commit-msg hook enforces this.
 - Don't add wikilinks to committed files (see AGENTS.md).
 
 ## Quick references

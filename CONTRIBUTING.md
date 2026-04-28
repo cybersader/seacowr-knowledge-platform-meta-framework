@@ -35,7 +35,7 @@ will cool them into deep-dives.
 ## Commits
 
 - Subject form: `area: imperative subject`. Example: `04-comparisons: stub vs-johnny-decimal page`.
-- **No AI attribution** — never include `Co-Authored-By: Claude`, `Generated with`, or any AI/LLM co-author footer. Commit as the human contributor only.
+- **No AI / LLM attribution.** Commit as the human contributor only — no `Co-Authored-By:` trailer for an AI tool, no "generated with…" footer.
 
 ## License
 

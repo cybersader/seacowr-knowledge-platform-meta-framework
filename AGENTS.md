@@ -61,7 +61,7 @@ Then map to a folder:
 ## Commit conventions
 
 - **Subject** — `area: imperative subject`, e.g. `01-framework: split activities into per-component pages`. Areas: `00-start-here`, `01-framework`, `02-tools`, `03-examples`, `04-comparisons`, `05-deep-dives`, `06-applications`, `indexes`, `meta`, `tools`.
-- **No AI attribution** — never include `Co-Authored-By: Claude`, `Co-Authored-By: Anthropic`, `Generated with`, or `noreply@anthropic.com`. The maintainer enforces this via a global commit-msg hook. Commit as the human contributor only.
+- **No AI / LLM attribution.** Commit as the human contributor only. Do not add any `Co-Authored-By:` trailer for an AI tool or LLM service, and do not include "generated with…" footers. The maintainer enforces this via a global commit-msg hook.
 - **Group migrations** — one commit per migration group (entry / components / examples / deep-dives / platform-notes / split-redistribute). Keeps `git log` readable.
 
 ## What NOT to do
