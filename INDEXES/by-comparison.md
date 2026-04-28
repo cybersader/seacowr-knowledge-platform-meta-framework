@@ -26,5 +26,6 @@ For the full per-comparison page, follow the link in the rightmost column.
 
 ## See also
 
+- **[03-examples/framework-gallery.md](../03-examples/framework-gallery.md)** — the exhaustive gallery: ~30 frameworks side-by-side with concrete folder/tag trees, SEACOW(r) mappings, and pointers to where each one lives in cybersader's starter-kit collection. Includes families this matrix doesn't (cyber compliance: CSF 2.0 / 800-53 / CIS / ATT&CK; library science: LCC / LCSH / DDC / UDC / Ranganathan PMEST; vault starters: secops / Weave / Ideaverse / FLAP).
 - [04-comparisons/README.md](../04-comparisons/README.md) — the canonical comparison index, with submission guidelines.
 - [05-deep-dives/knowledge-organization.md](../05-deep-dives/knowledge-organization.md) — the broader landscape these all sit in.
