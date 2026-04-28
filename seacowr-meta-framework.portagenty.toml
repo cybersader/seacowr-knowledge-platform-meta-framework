@@ -1,0 +1,11 @@
+# Workspace file for portagenty. See:
+# https://cybersader.github.io/portagenty/reference/schema/
+name = "seacowr-meta-framework"
+id = "3f13960f-febe-4a3e-a552-3865425844ca"
+multiplexer = "zellij"
+
+[[session]]
+name = "shell"
+cwd = "."
+command = "bash"
+kind = "shell"
