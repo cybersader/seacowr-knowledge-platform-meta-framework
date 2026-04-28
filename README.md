@@ -35,11 +35,12 @@ folder names — copy the thinking process.
 
 ## Multiple ways in (different navigations of the same content)
 
+- **[03-examples/framework-gallery.md](03-examples/framework-gallery.md)** — exhaustive side-by-side gallery of organizational frameworks with concrete folder/tag trees and SEACOW(r) mappings (PARA, PARAUT, BASB+CODE, Zettelkasten, FLAP, LYT/Ideaverse, evergreen-notes, ARC, ACE, STIR, ARCO, e-ACCESS, Johnny Decimal, LATCH, DIKW, LCC, LCSH, DDC, UDC, Ranganathan PMEST, controlled-vocab types, folksonomy, vault starters, cyber compliance frameworks, DEEZNUTS, EJK, and more).
 - [INDEXES/by-audience.md](INDEXES/by-audience.md) — Newcomer / Practitioner / Architect lanes
 - [INDEXES/by-component.md](INDEXES/by-component.md) — slice by S / E / A / C / O / W / r
 - [INDEXES/by-task.md](INDEXES/by-task.md) — Learn / Design / Apply / Extend / Compare
 - [INDEXES/by-depth.md](INDEXES/by-depth.md) — 60-sec / 5-min / 30-min reads
-- [INDEXES/by-comparison.md](INDEXES/by-comparison.md) — SEACOW(r)-vs-X matrix
+- [INDEXES/by-comparison.md](INDEXES/by-comparison.md) — SEACOW(r)-vs-X matrix (compact)
 
 ## What's in this repo
 
@@ -67,8 +68,10 @@ folder names — copy the thinking process.
 ## Status
 
 **v0.1.0** — initial migration baseline. Concepts and worked examples are
-imported from the cyberbase vault; comparisons are stubbed and will be filled
-incrementally. Issues and PRs welcome.
+imported from the cyberbase vault; per-framework comparison pages are stubbed
+and will be filled incrementally. Issues and PRs welcome.
+
+See [ROADMAP.md](ROADMAP.md) for what's queued next.
 
 ## Conventions
 
