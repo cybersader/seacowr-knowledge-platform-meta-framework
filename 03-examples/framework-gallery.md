@@ -51,14 +51,7 @@ Conventions used in this page:
   - [Ranganathan's Colon Classification (PMEST)](#ranganathans-colon-classification-pmest)
   - [Controlled vocabulary types (8 forms)](#controlled-vocabulary-types-8-forms)
   - [Folksonomy](#folksonomy)
-- [Domain-specific vault starters](#domain-specific-vault-starters)
-  - [obsidian-secops-vault-template (cybersader)](#obsidian-secops-vault-template-cybersader)
-  - [cyberbase (cybersader)](#cyberbase-cybersader)
-  - [Ideaverse Lite 1.5 (LYT)](#ideaverse-lite-15-lyt)
-  - [Weave (corporate, cuken)](#weave-corporate-cuken)
-  - [The Good Parts v2 (FLAP)](#the-good-parts-v2-flap)
-  - [Other starters in your collection](#other-starters-in-your-collection)
-- [Cybersecurity compliance frameworks (specialized)](#cybersecurity-compliance-frameworks-specialized)
+- [Cybersecurity compliance frameworks](#cybersecurity-compliance-frameworks)
   - [NIST Cybersecurity Framework 2.0 (CSF 2.0)](#nist-cybersecurity-framework-20-csf-20)
   - [NIST SP 800-53 control families](#nist-sp-800-53-control-families)
   - [CIS Controls (IG1 / IG2 / IG3)](#cis-controls-ig1--ig2--ig3)
@@ -157,7 +150,7 @@ Conventions used in this page:
 **Where it lives in your stack:**
 
 - `cybersader-vault-starters/starters (not mine)/PARA_Starter_Kit_v2/`
-- Numbered SecOps variant in `obsidian-secops-vault-template/` uses `01 - Projects, Workspaces/` + `02 - Areas, Objectives, Initiatives, Ongoing/` + `05 - Archive, Admin/`.
+- Numbered-PARA variants common in compliance / corporate vaults use `01 - Projects, Workspaces/` + `02 - Areas, Objectives, Initiatives, Ongoing/` + `05 - Archive, Admin/` style numbering.
 
 **Variants in the wild:**
 
@@ -679,7 +672,6 @@ The pure triplet — inputs / function / outputs. SEACOW(r) is what you get when
 **Where it lives in your stack:**
 
 - The cyberbase `📁 01 - Projects` … `📁 17 - Knowledge Engineering` folder convention is JD-flavored (one digit per area, no `.01` IDs).
-- The SecOps starter `00 - Tasks, Planning/` … `99 - ARCHIVE/` is JD-flavored too.
 
 **Detail page:** [`../04-comparisons/vs-johnny-decimal.md`](../04-comparisons/vs-johnny-decimal.md)
 
@@ -834,7 +826,7 @@ Cyberterrorism
 
 **Where it lives in your stack:**
 
-- Your `cybersader-vaults/_BACKUPS/awesome-cyber/📁 17 - Knowledge Engineering/Knowledge Organization.md` documents an integration approach: download the MADS/RDF JSONLD from `id.loc.gov/download/`, point the [linked-data-vocabularies plugin](https://github.com/kometenstaub/linked-data-vocabularies) at it, then `Ctrl+P > LCSH > category lookup`.
+- LCSH is loadable into Obsidian via the [linked-data-vocabularies plugin](https://github.com/kometenstaub/linked-data-vocabularies): download the MADS/RDF JSONLD from `id.loc.gov/download/`, point the plugin at it, then `Ctrl+P > LCSH > category lookup`.
 
 ---
 
@@ -952,7 +944,7 @@ You combine facets with `:` (and other separators) to build a class number for *
 
 ## Controlled vocabulary types (8 forms)
 
-**From your cyberbase `Knowledge Organization.md`:**
+**Eight forms** (per the standard library-science taxonomy of vocabulary types):
 
 **Visual** (least → most structured):
 
@@ -1022,223 +1014,18 @@ The 8 forms in detail:
 
 - Tag Wrangler (rename / merge tags).
 - LinkedTagging — promoting tags into structured types.
-- Crosswalker (your plugin) — ingesting an authoritative ontology and relating folksonomy tags to it.
+- Crosswalker — a plugin that ingests an authoritative ontology and relates folksonomy tags to it.
 
 ---
 
-# Domain-specific vault starters
+# Cybersecurity compliance frameworks
 
-These are *applications* of one or more frameworks above to a specific Entity.
-
-## obsidian-secops-vault-template (cybersader)
-
-**URL:** [github.com/cybersader/obsidian-secops-vault-template](https://github.com/cybersader/obsidian-secops-vault-template)
-
-**Tree (verbatim, condensed):**
-
-```
-00 - Tasks, Planning/
-  ├── ALL TASKS
-  ├── Planning Sources
-  ├── TRACKER (USER_1)
-  ├── TRACKER (USER_2)
-  └── Wishlist, Budget
-01 - Projects, Workspaces/
-02 - Areas, Objectives, Initiatives, Ongoing/
-03 - Docs, Internal Info, SOPs, Resources/
-04 - Topics, Knowledge, External/
-05 - Archive, Admin/
-06 - Ideation, Sandbox/
-07 - Vault Config & Management/
-08 - Frameworks/
-   ├── Cyber Intel, Risk Intel/
-   └── Frameworks, Ontologies, Mappings/
-99 - ARCHIVE/
-Framework Mapping/
-   ├── Frameworker_Example/
-   └── Links to Frameworks/
-SYSTEM - SCRIPTS, QUERIES/
-   ├── Templates/
-   └── Templates_Pandoc/
-Tag Usage Examples/
-Testing/
-User DB/
-_STARTER_GUIDE/  (15+ sections)
-⬇️ or 📥 DROPZONE, Inbox/
-⭐ VAULT GUIDE, README (example)/
-🔎 Index, Navigator, Map, MOCs, Atlas/
-```
-
-**Frameworks composed:** Johnny Decimal-flavored numbering + PARAUT (00 inbox + 99 archive + 08 frameworks) + cybersecurity domain customization.
-
-**Frontmatter convention:**
-
-```yaml
----
-type: [note_type]
-status: [draft | published | archived]
-tags: [tag_namespace/subtag]
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
----
-```
-
-**Notable extensions:** `08 - Frameworks/` for compliance crosswalking; multi-user `TRACKER (USER_1/2)`; emoji-prefixed indexes (⬇️, ⭐, 🔎).
-
----
-
-## cyberbase (cybersader)
-
-**URL:** [github.com/cybersader/cyberbase](https://github.com/cybersader/cyberbase)
-
-**Visual** (condensed — full tree is in [Numbered + emoji prefix](#numbered--emoji-prefix-cyberbase-variant)):
-
-```
-cyberbase/
-├── ✅ TASKS                          (SYSTEM)
-├── ⬇️ INBOX, DROPZONE                (CAPTURE)
-├── ⬇️ Clippings                       (CAPTURE)
-├── 📁 01 - Projects                   (OUTPUT, JD-flavored)
-├── 📁 02 - CyberNews                  (OUTPUT)
-├── 📁 03 - Curations, Stacks          (OUTPUT)
-├── 📁 04 - Cyber & Digital Trust      (OUTPUT)
-├── 📁 05 - Organizational Cyber       (OUTPUT)
-├── 📁 06 - Learning, Notes            (OUTPUT)
-├── 📁 ... (07-18 OUTPUT folders)
-├── 🕸️ UNSTRUCTURED                    (CAPTURE + WORK)
-├── 🕸️ Daily Notes                     (CAPTURE + relation)
-└── _attachments, _excalidraw          (SYSTEM)
-```
-
-This is the canonical SEACOW(r) instantiation.
-
----
-
-## Ideaverse Lite 1.5 (LYT)
-
-**Visual** (condensed — full tree is in the [LYT section](#linking-your-thinking-lyt--ideaverse--maps-of-content)):
-
-```
-Ideaverse Lite 1.5/
-├── + /                  templates, utilities (sorts to top)
-├── Atlas/
-│   ├── Dots/           atomic notes / individual ideas
-│   └── Maps/           MOCs — index/navigation structures
-├── Calendar/
-│   ├── Logs/
-│   └── Notes/
-├── Efforts/            (Milo's word for "Projects")
-│   ├── On/             active
-│   ├── Ongoing/        simmering
-│   └── Sleeping/       paused
-├── x/                  admin / utility
-└── Home.md             central hub
-```
-
----
-
-## Weave (corporate, cuken)
-
-**URL:** [github.com/cuken/obsidian-weave](https://github.com/cuken/obsidian-weave)
-
-**Tree (verbatim from `cybersader-vault-starters/starters (not mine)/Weave_clean/`):**
-
-```
-Weave/
-├── Applications/    # apps you use, accounts, integrations
-├── Contacts/        # CRM-lite — people you work with
-├── Daily/           # daily journal entries
-├── Meetings/        # meeting logs
-└── System/
-    ├── Media/
-    └── Templates/
-```
-
-**Plugin stack:** Buttons, Calendar, Dataview, NLDates, Checklist, Excalidraw, Icon Folder, Outliner, Tasks, Text Expander JS, QuickAdd, Table Editor, Templater.
-
-**SEACOW(r) mapping:**
-
-| SEACOW(r) | Weave expression |
-|---|---|
-| System | Obsidian + extensive plugin stack |
-| Entity | Corporate / synchronous-team setting |
-| Capture | `Daily/` (daily journal) + meeting captures |
-| Work | `Applications/` + `Meetings/` cross-linked via Dataview |
-| Output | not explicit — Weave is mostly Capture+Work, output happens elsewhere |
-| relation | Dataview-backed cross-references between Daily / Meetings / Applications / Contacts |
-
-**Why interesting:** the *flattest* serious starter — only 4 top-level content folders. Optimized for high-frequency capture (daily standup culture).
-
----
-
-## The Good Parts v2 (FLAP)
-
-**Visual** (tag-driven, no folders — full description in the [FLAP section](#atomic-notes--flap-fleeting--literature--atomic--project) above):
-
-```
-   #fleeting             ──▶  #atomic            ──▶  #project
-   (raw captures)              (publishable units)     (with start + end date)
-                                                        │
-                                                        └── #area  (start only)
-                                                            #archive (no tags)
-
-   #literature/unfiled   ──▶  #literature/<topic>
-   (Readwise auto-sync)        (manually filed)
-```
-
----
-
-## Other starters in your collection
-
-**Visual** (the starter ecosystem at a glance):
-
-```
-   cybersader-vault-starters/
-   ├── starters/                    ← cybersader's own (active + draft)
-   │   ├── obsidian-secops-vault-template/         active   PARAUT + JD + GRC
-   │   ├── obsidian-cyberbase-template/            active   Numbered + JD + Notion-ported
-   │   ├── obsidian-advanced-linking-vault-template/ active SecOps + advanced linking
-   │   ├── obsidian-grc-vault-template/            draft
-   │   ├── obsidian-devops-vault-template/         draft
-   │   ├── obsidian-cyber-frameworks-vault-template/ draft  CIS+NIST+MITRE pre-loaded
-   │   ├── obsidian-community-vault-template/      draft
-   │   ├── couple-vault-template/                  draft    two-Entity household
-   │   └── obsidian-catechesis-vault-template/     draft    religious education
-   │
-   └── starters (not mine)/         ← community references
-       ├── PARA_Starter_Kit_v2/                    ref      PARA
-       ├── Obsidian-Zettelkasten-Starter-Kit-3.0.0/ ref     Zettelkasten (groepl)
-       ├── Ideaverse Lite 1.5/                     ref      LYT (Nick Milo)
-       ├── Weave_clean/                            ref      Corporate (cuken)
-       ├── The Good Parts v2/                      ref      FLAP (Readwise-native)
-       ├── Obsidian Starter Vault Free/            ref      generic
-       ├── Obsidian-Templates-10.1.0/              ref      template collection
-       └── obsidian-hub-main/                      ref      community hub
-```
-
-Quick listing of additional starters present at `cybersader-vault-starters/starters/` and `starters (not mine)/`:
-
-| Starter | Status | Framework family |
-|---|---|---|
-| `obsidian-cyberbase-template` | active | Numbered + JD-flavored, FileOrganizer2000-augmented |
-| `obsidian-grc-vault-template` | draft | (planned) GRC application of SecOps pattern |
-| `obsidian-devops-vault-template` | draft | (planned) DevOps application |
-| `obsidian-advanced-linking-vault-template` | active | SecOps-pattern + advanced linking |
-| `obsidian-cyber-frameworks-vault-template` | draft | Pre-built compliance frameworks (CIS, NIST, MITRE) — pairs with Crosswalker |
-| `obsidian-community-vault-template` | draft | Community-vault pattern |
-| `couple-vault-template` | draft | Personal — two-Entity household |
-| `obsidian-catechesis-vault-template` | draft | Religious education |
-| `Obsidian Starter Vault Free` | reference | Generic minimal |
-| `Obsidian-Templates-10.1.0` | reference | Template collection |
-| `obsidian-hub-main` | reference | Community hub |
-
----
-
-# Cybersecurity compliance frameworks (specialized)
-
-These are domain-specific to your cybersecurity work but represent some of
-the most rigorous *real-world* hierarchical taxonomies. They illustrate how
-SEACOW(r) accommodates compliance / GRC use-cases.
+A worked example of how SEACOW(r) handles a domain with **rigorous,
+real-world hierarchical taxonomies and crosswalks**. The cybersec compliance
+ecosystem is one of the densest crosswalking environments in modern
+information work — useful as a reference even outside the security domain,
+because it shows how multiple competing taxonomies (CSF 2.0 / 800-53 / CIS /
+ATT&CK / ISO / etc.) coexist via explicit relation-layer mappings.
 
 ## NIST Cybersecurity Framework 2.0 (CSF 2.0)
 
@@ -1257,18 +1044,7 @@ RC — Recover
 
 Each function has **categories** (e.g. `ID.AM` Asset Management) and **subcategories** (e.g. `ID.AM-01` Inventories of physical devices...).
 
-**Concrete mapping example (from your `Home_IT_cyber_taxonomy.md`):**
-
-| Domain | Quick Wins | CSF 2.0 alignment |
-|---|---|---|
-| Govern & Inventory | Family rules, asset list, data classification | Govern |
-| Identity & Access | MFA, password manager | Identify |
-| Devices & OS | Auto-updates, encryption | Protect |
-| Network & Edge | WPA3, guest SSID | Protect |
-| Monitoring & Logging | Router/NAS telemetry | Detect |
-| Incident Response | Playbooks (lost phone, takeover) | Respond/Recover |
-
-**SEACOW(r) mapping:** CSF 2.0 is a pure relation/taxonomy used to *categorize* security activities. The functions ID/PR/DE/RS/RC act as a controlled vocabulary applied to your security Output (policies, runbooks, SOPs).
+**SEACOW(r) mapping:** CSF 2.0 is a pure relation/taxonomy used to *categorize* security activities. The functions GV/ID/PR/DE/RS/RC act as a controlled vocabulary applied to security Output (policies, runbooks, SOPs).
 
 ---
 
@@ -1363,7 +1139,7 @@ Procedures   — observed real-world implementations
 | **D3FEND** | defender | counter-measures, ontology of defensive techniques |
 | **Engage** | engagement | deception, disruption, response engagements |
 
-**SEACOW(r) mapping:** all three are relation-layer ontologies. ATT&CK is one of the most-crosswalked frameworks in cybersecurity — your `Crosswalker` plugin ingests these.
+**SEACOW(r) mapping:** all three are relation-layer ontologies. ATT&CK is one of the most-crosswalked frameworks in cybersecurity — the [Crosswalker plugin](https://github.com/cybersader/Crosswalker) ingests these into Obsidian vaults.
 
 ---
 
@@ -1403,13 +1179,11 @@ Capability — Victim
 
 Each adversary intrusion is described as a quadruple of (Adversary, Capability, Infrastructure, Victim).
 
-**SEACOW(r) mapping:** a relation-layer model for *describing* threat intelligence. Useful for SecOps Output (incident reports, threat profiles).
+**SEACOW(r) mapping:** a relation-layer model for *describing* threat intelligence — incident reports, threat profiles.
 
 ---
 
 ## Crosswalking — CSF 2.0 → 800-53 → CRI
-
-**Source:** your `cybersader-vaults/_BACKUPS/awesome-cyber/📁 05 - Organizational Cyber/Frameworks, Standards/Framework Mapping.md`.
 
 **Pattern:** map CSF 2.0 outcomes → 800-53 control families → CRI (Cyber Risk Institute) Community Profile risk scenarios.
 
@@ -1427,7 +1201,7 @@ CRI Community Profile v2.0 Structure sheet
 RCSA process templates
 ```
 
-**SEACOW(r) mapping:** crosswalking *is* the relation layer made explicit — formal mappings between competing taxonomies. This is what your [Crosswalker plugin](https://github.com/cybersader/Crosswalker) automates inside Obsidian.
+**SEACOW(r) mapping:** crosswalking *is* the relation layer made explicit — formal mappings between competing taxonomies. The [Crosswalker plugin](https://github.com/cybersader/Crosswalker) automates this inside Obsidian.
 
 **External resources:**
 

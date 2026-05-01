@@ -30,9 +30,11 @@ Synonyms for the no-place-yet zone:
 - Unsorted
 - Unstructured
 
-## SecOps example structure
+## Numbered + emoji-prefix corporate structure
 
-A starter structure tailored for security operations:
+A starter structure tailored for compliance / corporate / multi-team
+contexts (numbered-PARA variant with explicit Tasks, Topics, Knowledge,
+and Sandbox layers):
 
 ```
 📥 DROPZONE, Inbox
@@ -40,7 +42,7 @@ A starter structure tailored for security operations:
 0 - Tasks, Planning
 1 - Workspaces, Projects
 2 - Areas, Initiatives
-3 - Docs, Intel, SOPs
+3 - Docs, Internal Info, SOPs
 4 - Topics, Knowledge, External
 5 - Archive, Admin
 6 - Ideation, Sandbox
