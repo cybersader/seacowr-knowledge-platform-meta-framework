@@ -205,6 +205,22 @@ Conventions used in this page:
 
 **Origin:** Tiago Forte, *Building a Second Brain* (2022).
 
+**Visual:**
+
+```
+                  ┌─────────────────────┐
+                  │   BASB = PARA + CODE │
+                  └──────────┬──────────┘
+                             │
+            ┌────────────────┴────────────────┐
+            │                                 │
+       PARA (storage)                   CODE (verbs)
+            │                                 │
+   ┌────┬───┴───┬────┐               ┌────┬───┴───┬────┐
+   P    A      R    A                C    O      D    E
+Projects Areas Resources Archive    Capture Org. Distill Express
+```
+
 **The CODE workflow** (Forte's process layer that pairs with PARA):
 
 | Letter | Meaning | SEACOW(r) |
@@ -370,6 +386,20 @@ in:
 
 **Origin:** [notes.andymatuschak.org](https://notes.andymatuschak.org/) — Andy Matuschak's published note-garden + writing on the practice.
 
+**Visual** (deliberately graph, not tree):
+
+```
+            ┌─[atomic note]
+            │       ↕                  no folders.
+   [atomic note]──[atomic note]        the link graph
+        ↕            ↕                  *is* the structure.
+  [atomic note]──[atomic note]──[atomic note]
+        ↕            ↕            ↕
+   [atomic note]──[atomic note]
+            ↕
+        [atomic note]
+```
+
 **Core principles (paraphrased):**
 
 - **Evergreen notes should be atomic** — one concept per note.
@@ -404,6 +434,16 @@ These aren't folder schemes — they're *rhythms* that overlay any folder scheme
 ## ARC (Add, Relate, Communicate)
 
 **Origin:** Nick Milo (LYT).
+
+**Visual:**
+
+```
+   raw input        ━━ Add ━━━━━━━▶  [your vault]
+                                          │
+                          ━━ Relate ━━━━━━┤  (links, MOCs, tags)
+                                          │
+   audience  ◀━━ Communicate ━━━━━━━━━━━━━┘
+```
 
 **Three verbs:**
 
@@ -451,6 +491,22 @@ The "R" in STIR (Relatedness) = **the links you draw between Atlas/Calendar/Effo
 ## STIR (Space, Time, Importance, Relatedness)
 
 **Origin:** community / forum discussion on the same Obsidian thread.
+
+**Visual:**
+
+```
+                    ╔═══════════════╗
+                    ║      STIR      ║
+                    ╚═══════╤═══════╝
+                            │
+        ┌───────────┬───────┴────────┬───────────┐
+        │           │                │           │
+       (S)         (T)              (I)         (R)
+       Space       Time            Importance   Relatedness
+        │           │                │           │
+       Atlas    Calendar          Efforts     (the links you draw)
+       (in ACE)  (in ACE)         (in ACE)    (between A/C/E)
+```
 
 **Four organizing axes:**
 
@@ -523,6 +579,27 @@ Spaces/       # areas of life — each Space has its own PARA or sub-structure
 
 **Origin:** your own working-notes — predecessor acronyms before SEACOW(r) settled.
 
+**Visual** (acronym evolution):
+
+```
+         COW                              ─── 3 verbs (Capture, Output, Work)
+          │
+          ▼
+        COWS                              ─── + System
+          │
+          ▼
+       WORCS                              ─── + Relation, reordered
+          │  "cause it just works"
+          ▼
+      WO(R)C(S)                           ─── parens for optional pieces
+          │
+          ▼
+      SEA(COWr)         ◀── current       ─── + Entity (audience)
+          │                                    + Activities umbrella
+          │                                    lower-case r (debatable)
+   System / Entity / Activities (Capture, Output, Work, relation)
+```
+
 | Acronym | Components | Status |
 |---|---|---|
 | **COW** | Capture, Output, Work | earliest sketch |
@@ -538,6 +615,20 @@ Spaces/       # areas of life — each Space has its own PARA or sub-structure
 ## Capture-Work-Output (CWO)
 
 **Origin:** the bare three-verb engineering reduction underneath SEACOW(r).
+
+**Visual:**
+
+```
+   ┌───────────┐    ┌───────────┐    ┌───────────┐
+   │  CAPTURE  │ ──▶│   WORK    │ ──▶│  OUTPUT   │
+   │  (inputs) │    │ (function)│    │ (outputs) │
+   └───────────┘    └───────────┘    └───────────┘
+                          ↑
+                    + SYSTEM (platform)
+                    + ENTITY (audience)
+                    + relation (graph layer)
+                    = SEACOW(r)
+```
 
 The pure triplet — inputs / function / outputs. SEACOW(r) is what you get when you add Entity (audience) and System (platform) on top.
 
@@ -597,6 +688,21 @@ The pure triplet — inputs / function / outputs. SEACOW(r) is what you get when
 ## LATCH (Wurman)
 
 **Origin:** Richard Saul Wurman, *Information Anxiety* — five fundamental ways to organize information.
+
+**Visual:**
+
+```
+                  Same content,
+                   five rotations:
+
+   By LOCATION    [North] [South] [East] [West]
+   By ALPHABET    [A]  [B]  [C]  [D]  [E]  ...
+   By TIME        2020 → 2021 → 2022 → 2023 → 2024
+   By CATEGORY    [Books] [Videos] [Articles] [Podcasts]
+   By HIERARCHY   ╔═══╗→╔═══╗→╔═══╗→╔═══╗   (rank/magnitude)
+                  ║ 5 ║  ║ 4 ║  ║ 3 ║  ║ 2 ║
+                  ╚═══╝  ╚═══╝  ╚═══╝  ╚═══╝
+```
 
 | Letter | Dimension | Example use |
 |---|---|---|
@@ -703,6 +809,27 @@ Each letter has a sub-classification (e.g. `QA` is Mathematics under Science). S
 
 **Form:** subject headings like `Computer security`, `Cryptography`, `Cyberterrorism — Prevention`. Subdivisions appear after `—` (em dash).
 
+**Visual** (heading hierarchy + subdivisions):
+
+```
+Computer security
+├── Computer security — Government policy
+├── Computer security — Law and legislation
+├── Computer security — Standards
+│   └── Computer security — Standards — United States
+└── Computer security — Vocational guidance
+
+Cryptography
+├── Cryptography — Bibliography
+├── Cryptography — Data processing
+├── Cryptography — Mathematical models
+└── Public key cryptography
+
+Cyberterrorism
+├── Cyberterrorism — Prevention
+└── Cyberterrorism — United States — Prevention
+```
+
 **SEACOW(r) mapping:** the controlled-vocabulary side of relation — explicitly named, hierarchically organized topics that any item can be tagged with.
 
 **Where it lives in your stack:**
@@ -742,6 +869,40 @@ Each class subdivides into 10 (e.g. `500` → `510 Mathematics`, `520 Astronomy`
 
 **Difference from DDC:** UDC is **faceted** — you can combine classes with auxiliary signs (`+`, `:`, `/`, `=`, `(`, `)`) to express *complex* topics. E.g. `004:621.39` means "computer science *applied to* telecommunications."
 
+**Visual** (auxiliary signs + a worked example):
+
+```
+   Top classes:    0  Generalities, computer science
+                   1  Philosophy, psychology
+                   2  Religion, theology
+                   3  Social sciences
+                   5  Mathematics, natural sciences
+                   6  Applied sciences, technology, medicine
+                   7  Arts, recreation, sports
+                   8  Linguistics, literature
+                   9  Geography, biography, history
+
+   Auxiliary signs (the faceted-classification magic):
+       +   coordination ("and"):     59 + 636        — zoology AND animal husbandry
+       /   consecutive extension:    592/599         — invertebrate to vertebrate zoology
+       :   relation:                 02:34           — librarianship related to law
+       []  subgrouping:              02:[34+33]      — librarianship related to law and economics
+       =   language:                 ...=111         — in English
+       (0...) form:                  ...(02)         — handbook form
+       (1/9) place:                  ...(44)         — France
+       "..." time:                   ..."20"         — 21st century
+
+   Worked example:
+       004 : 621.39 = 111 (44) "20"
+        │     │       │   │     │
+        │     │       │   │     └── 21st century
+        │     │       │   └────── France
+        │     │       └────── in English
+        │     └────────────── telecommunications
+        └────────────────── computer science
+       "Computer-science-applied-to-telecommunications, in English, France, 21st century"
+```
+
 **SEACOW(r) mapping:** UDC is the closest formal classification system to SEACOW(r)'s relation layer — it explicitly supports cross-cutting combinations rather than forcing single-parent hierarchy.
 
 **Where it lives in your stack:** referenced in cyberbase `Knowledge Organization.md`.
@@ -764,6 +925,25 @@ Each class subdivides into 10 (e.g. `500` → `510 Mathematics`, `520 Astronomy`
 
 You combine facets with `:` (and other separators) to build a class number for *any* item.
 
+**Visual** (compose any subject from PMEST facets):
+
+```
+   Subject heading = MAIN_CLASS [, P] [; M] [: E] [. S] [' T]
+                                  │     │     │     │     │
+                                  P     M     E     S     T
+
+   Worked example: "X-ray therapy of tuberculosis of lungs, in India, 1950"
+       L   ,   45     ;   421       :   6        .   44     '   N5
+       │       │          │             │            │          │
+   Medicine  Lungs    Tuberculosis   Therapy       India        1950
+   (main)    (P)      (M — disease)  (E — by-X-ray)(S — place)   (T — date)
+
+   Reads left-to-right as the work's "shelf address":
+   ┌───────────────────────────────────────────────────────────────────┐
+   │  Medicine ▶ Lungs ▶ TB ▶ X-ray therapy ▶ India ▶ 1950             │
+   └───────────────────────────────────────────────────────────────────┘
+```
+
 **SEACOW(r) mapping:** PMEST overlaps with SEACOW(r) but speaks to the *content* (what's the item about?) where SEACOW(r) speaks to the *workflow position* (where does it sit in capture-work-output?). Use PMEST inside Output to classify; use SEACOW(r) outside to decide *where* the classified item lives.
 
 **Why interesting:** PMEST is the *grandparent* of modern faceted classification (which Notion's properties, schema.org, and Wikidata all descend from).
@@ -773,6 +953,25 @@ You combine facets with `:` (and other separators) to build a class number for *
 ## Controlled vocabulary types (8 forms)
 
 **From your cyberbase `Knowledge Organization.md`:**
+
+**Visual** (least → most structured):
+
+```
+   FLAT ◀──────────────────────── STRUCTURE LADDER ────────────────────▶ FORMAL
+
+   Folksonomy   →  Pick List  →  Authority File  →  Subject Headings  →  Taxonomy  →  Thesaurus  →  Classification Scheme  →  Ontology
+   ─────────       ─────────     ──────────────     ────────────────     ────────     ─────────     ────────────────────     ────────
+   user-driven    flat enum     canonical names    pre-coordinated      tree         + synonyms     coded addresses          formal logic
+   emergent       no rels       (people, places)   ("Computer security  hierarchy    + broader/     (LCC, DDC, UDC)          (RDF, OWL)
+                                                    — Standards")       only         narrower/                                inference!
+                                                                                     related
+   #obsidian      [draft|        John Smith        Computer security    Security     synonym:       QA76.73                   :Person rdf:type
+   #ml            published]      → "Smith, John   Cryptography           ├─ AppSec  "Cybersec"     QA76.9                       owl:Class
+                                     1965-"        Cyberterrorism         └─ NetSec   broader:                                 :knows owl:domain
+                                                                                     "InfoSec"                                   :Person
+```
+
+The 8 forms in detail:
 
 1. **Simple Term Lists** (Pick Lists) — flat enumeration.
 2. **Thesauri** — terms + broader/narrower/related relations + synonyms.
@@ -792,6 +991,30 @@ You combine facets with `:` (and other separators) to build a class number for *
 **Origin:** community / web 2.0; tagging on Delicious, Flickr, Twitter, etc.
 
 **Definition:** the *emergent* classification produced by users tagging things with whatever terms they want, with no controlled vocabulary or authority.
+
+**Visual** (the cost of emergence):
+
+```
+   What users actually type:
+   ┌──────────────────────────────────────────┐
+   │ #ml          #ML            #m.l.        │
+   │ #machinelearning            #MachineLearning
+   │ #machine-learning           #machine_learning
+   │ #ai/ml       #ai_ml         #aiml        │
+   │ #deeplearning                #deep-learning
+   │ #DL          #neuralnets    #nn          │
+   └──────────────────────────────────────────┘
+                      │
+                      ▼  (tag-cleanup pass)
+                      │
+   Crosswalker / Tag Wrangler / SKOS-mapping
+                      │
+                      ▼
+   Canonical:  #machine-learning
+   Aliases:    #ml, #machinelearning, #machine_learning
+   Children:   #machine-learning/deep-learning
+               #machine-learning/neural-networks
+```
 
 **Why it matters in PKM:** Obsidian tags are folksonomies by default. The *value* is low effort + high coverage; the *cost* is inconsistency (`#machine-learning`, `#machinelearning`, `#ml`, `#ML` will not collate).
 
@@ -868,13 +1091,49 @@ updated: YYYY-MM-DD
 
 **URL:** [github.com/cybersader/cyberbase](https://github.com/cybersader/cyberbase)
 
-See the [Numbered + emoji prefix](#numbered--emoji-prefix-cyberbase-variant) section above for the tree. This is the canonical SEACOW(r) instantiation.
+**Visual** (condensed — full tree is in [Numbered + emoji prefix](#numbered--emoji-prefix-cyberbase-variant)):
+
+```
+cyberbase/
+├── ✅ TASKS                          (SYSTEM)
+├── ⬇️ INBOX, DROPZONE                (CAPTURE)
+├── ⬇️ Clippings                       (CAPTURE)
+├── 📁 01 - Projects                   (OUTPUT, JD-flavored)
+├── 📁 02 - CyberNews                  (OUTPUT)
+├── 📁 03 - Curations, Stacks          (OUTPUT)
+├── 📁 04 - Cyber & Digital Trust      (OUTPUT)
+├── 📁 05 - Organizational Cyber       (OUTPUT)
+├── 📁 06 - Learning, Notes            (OUTPUT)
+├── 📁 ... (07-18 OUTPUT folders)
+├── 🕸️ UNSTRUCTURED                    (CAPTURE + WORK)
+├── 🕸️ Daily Notes                     (CAPTURE + relation)
+└── _attachments, _excalidraw          (SYSTEM)
+```
+
+This is the canonical SEACOW(r) instantiation.
 
 ---
 
 ## Ideaverse Lite 1.5 (LYT)
 
-See the [LYT section](#linking-your-thinking-lyt--ideaverse--maps-of-content) above.
+**Visual** (condensed — full tree is in the [LYT section](#linking-your-thinking-lyt--ideaverse--maps-of-content)):
+
+```
+Ideaverse Lite 1.5/
+├── + /                  templates, utilities (sorts to top)
+├── Atlas/
+│   ├── Dots/           atomic notes / individual ideas
+│   └── Maps/           MOCs — index/navigation structures
+├── Calendar/
+│   ├── Logs/
+│   └── Notes/
+├── Efforts/            (Milo's word for "Projects")
+│   ├── On/             active
+│   ├── Ongoing/        simmering
+│   └── Sleeping/       paused
+├── x/                  admin / utility
+└── Home.md             central hub
+```
 
 ---
 
@@ -914,11 +1173,48 @@ Weave/
 
 ## The Good Parts v2 (FLAP)
 
-See the [FLAP section](#atomic-notes--flap-fleeting--literature--atomic--project) above.
+**Visual** (tag-driven, no folders — full description in the [FLAP section](#atomic-notes--flap-fleeting--literature--atomic--project) above):
+
+```
+   #fleeting             ──▶  #atomic            ──▶  #project
+   (raw captures)              (publishable units)     (with start + end date)
+                                                        │
+                                                        └── #area  (start only)
+                                                            #archive (no tags)
+
+   #literature/unfiled   ──▶  #literature/<topic>
+   (Readwise auto-sync)        (manually filed)
+```
 
 ---
 
 ## Other starters in your collection
+
+**Visual** (the starter ecosystem at a glance):
+
+```
+   cybersader-vault-starters/
+   ├── starters/                    ← cybersader's own (active + draft)
+   │   ├── obsidian-secops-vault-template/         active   PARAUT + JD + GRC
+   │   ├── obsidian-cyberbase-template/            active   Numbered + JD + Notion-ported
+   │   ├── obsidian-advanced-linking-vault-template/ active SecOps + advanced linking
+   │   ├── obsidian-grc-vault-template/            draft
+   │   ├── obsidian-devops-vault-template/         draft
+   │   ├── obsidian-cyber-frameworks-vault-template/ draft  CIS+NIST+MITRE pre-loaded
+   │   ├── obsidian-community-vault-template/      draft
+   │   ├── couple-vault-template/                  draft    two-Entity household
+   │   └── obsidian-catechesis-vault-template/     draft    religious education
+   │
+   └── starters (not mine)/         ← community references
+       ├── PARA_Starter_Kit_v2/                    ref      PARA
+       ├── Obsidian-Zettelkasten-Starter-Kit-3.0.0/ ref     Zettelkasten (groepl)
+       ├── Ideaverse Lite 1.5/                     ref      LYT (Nick Milo)
+       ├── Weave_clean/                            ref      Corporate (cuken)
+       ├── The Good Parts v2/                      ref      FLAP (Readwise-native)
+       ├── Obsidian Starter Vault Free/            ref      generic
+       ├── Obsidian-Templates-10.1.0/              ref      template collection
+       └── obsidian-hub-main/                      ref      community hub
+```
 
 Quick listing of additional starters present at `cybersader-vault-starters/starters/` and `starters (not mine)/`:
 
@@ -1007,6 +1303,33 @@ Controls are addressed as `AC-1`, `AC-2`, etc., with control enhancements like `
 
 **Origin:** Center for Internet Security.
 
+**Visual** (controls × IG-tier):
+
+```
+                                                    IG1   IG2   IG3
+   01  Inventory of Enterprise Assets                ●     ●     ●
+   02  Inventory of Software Assets                  ●     ●     ●
+   03  Data Protection                               ●     ●     ●
+   04  Secure Configuration                          ●     ●     ●
+   05  Account Management                            ●     ●     ●
+   06  Access Control Management                     ●     ●     ●
+   07  Continuous Vulnerability Management           ●     ●     ●
+   08  Audit Log Management                          ●     ●     ●
+   09  Email and Web Browser Protections             ●     ●     ●
+   10  Malware Defenses                              ●     ●     ●
+   11  Data Recovery                                 ●     ●     ●
+   12  Network Infrastructure Management             ─     ●     ●
+   13  Network Monitoring and Defense                ─     ●     ●
+   14  Security Awareness and Skills Training        ●     ●     ●
+   15  Service Provider Management                   ─     ●     ●
+   16  Application Software Security                 ─     ●     ●
+   17  Incident Response Management                  ●     ●     ●
+   18  Penetration Testing                           ─     ─     ●
+
+   Each control has Safeguards (sub-controls);
+   ~56 safeguards in IG1, ~130 in IG2, ~153 in IG3.
+```
+
 **Tiered maturity:**
 
 | Tier | Audience |
@@ -1014,8 +1337,6 @@ Controls are addressed as `AC-1`, `AC-2`, etc., with control enhancements like `
 | **IG1** — Implementation Group 1 | Small businesses, basic hygiene |
 | **IG2** — Implementation Group 2 | Mid-size organizations, hardening |
 | **IG3** — Implementation Group 3 | Large enterprises, advanced |
-
-**18 CIS Controls** (as of v8): Inventory of Hardware, Inventory of Software, Data Protection, Secure Configuration, Account Management, Access Control Management, Continuous Vulnerability Management, Audit Log Management, Email and Web Browser Protections, Malware Defenses, Data Recovery, Network Infrastructure Management, Network Monitoring and Defense, Security Awareness, Service Provider Management, Application Software Security, Incident Response Management, Penetration Testing.
 
 **SEACOW(r) mapping:** like CSF 2.0, a relation-layer taxonomy. The IG-tier system is interesting — it adds an *Entity-aware* dimension (different recommendations for different organization sizes).
 
@@ -1435,6 +1756,61 @@ DEFINE   → MEASURE   → ANALYZE   → IMPROVE   → CONTROL
 
 **Origin:** Toyota Production System (5 Whys / Sakichi Toyoda); Kaoru Ishikawa (Fishbone, 1968); journalism (5W1H).
 
+**Visual — 5 Whys:**
+
+```
+   Symptom:    "Customer's order shipped late."
+       │  Why?
+       ▼
+   Why 1:      "Picker missed the SLA window."
+       │  Why?
+       ▼
+   Why 2:      "Truck dock was full."
+       │  Why?
+       ▼
+   Why 3:      "Outbound dock blocked by inbound returns."
+       │  Why?
+       ▼
+   Why 4:      "Returns hadn't been processed in 4 days."
+       │  Why?
+       ▼
+   Why 5:      "Returns staff was reassigned to inventory count."
+       │
+       ▼
+   Root cause: scheduling rule lacks priority for returns processing.
+```
+
+**Visual — Ishikawa Fishbone (6Ms):**
+
+```
+   Man     Machine    Method
+     \      |        /
+      \     |       /
+       \    |      /
+        \   |     /
+         \  |    /
+          \ |   /
+           \|  /
+   ─────────────────────►  PROBLEM
+           /|  \
+          / |   \
+         /  |    \
+        /   |     \
+       /    |      \
+      /     |       \
+     /      |        \
+   Material Measurement Milieu (Environment)
+```
+
+**Visual — 5W1H** (single row of probes):
+
+```
+   PROBLEM
+   ──┬──┬──┬──┬──┬──
+     ▼  ▼  ▼  ▼  ▼  ▼
+    Who What Where When Why How
+```
+
 **5 Whys:** iterate the question "why?" 5 times to drill from symptom to root cause.
 
 **Ishikawa 6Ms (cause categories):** **M**an / **M**achine / **M**ethod / **M**aterial / **M**easurement / **M**ilieu (Environment).
@@ -1525,6 +1901,24 @@ Layer 4: remix into new artifact
 **Source:** Tiago Forte, *Building a Second Brain*.
 
 **Pattern:** mirror the same 4-folder PARA structure across **every** container — desktop file system, cloud drive, email folders, note app, physical filing cabinet — so cross-platform navigation is isomorphic.
+
+**Visual (mirror-PARA across every System):**
+
+```
+   ┌──────────────┬──────────────┬──────────────┬──────────────┬──────────────┐
+   │   DESKTOP    │  CLOUD DRIVE │     EMAIL    │    NOTES     │   PHYSICAL   │
+   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+   │ /Projects    │ /Projects    │ /Projects    │ /Projects    │ Cab 1: Proj. │
+   │ /Areas       │ /Areas       │ /Areas       │ /Areas       │ Cab 2: Areas │
+   │ /Resources   │ /Resources   │ /Resources   │ /Resources   │ Cab 3: Res.  │
+   │ /Archive     │ /Archive     │ /Archive     │ /Archive     │ Cab 4: Arch. │
+   └──────────────┴──────────────┴──────────────┴──────────────┴──────────────┘
+                                       ▲
+                                       │
+                          isomorphic across every System
+                          → muscle memory cross-platform
+                          → search trains the same vocabulary
+```
 
 **SEACOW(r) mapping:** same Container schema across every System surface. *Mirror-PARA*.
 
@@ -1646,6 +2040,32 @@ Campfire — private Slack groups, casual blog rings, "Cozy Web" intimacies
 - Content types: notes, proverbs, adages, aphorisms, maxims, recipes, quotes, letters, poems, tables, prayers, professional references.
 - **Locke's 1706 indexing method:** index by *first letter* + *first vowel* of each head (so all "Politics" entries land in `Pi`, "Patience" in `Pa`).
 
+**Visual** (Locke's index — first letter + first vowel of each head):
+
+```
+   Index page (the front of the book):
+
+       │ a │ e │ i │ o │ u │
+   ────┼───┼───┼───┼───┼───┤
+    A  │p2 │p7 │   │p11│   │  ← entries starting with 'A' indexed by next vowel
+    B  │   │   │   │p3 │   │
+    P  │p5 │p8 │p13│p20│   │  ← Pa = "Patience" → p5
+                              │   Pe = "Persistence" → p8
+                              │   Pi = "Politics" → p13   (per Locke's example)
+                              │   Po = "Power" → p20
+
+   Page 5 (first available "Pa..." page):
+   ┌──────────────────────────────────────────┐
+   │ Patience                                  │
+   │ ─────────                                  │
+   │ "He that can have patience, can have       │
+   │  what he will." — Franklin                 │
+   │                                              │
+   │ "Patience is bitter, but its fruit          │
+   │  is sweet." — Aristotle                    │
+   └──────────────────────────────────────────┘
+```
+
 **SEACOW(r) mapping:** thematic-head Container taxonomy of quote/observation Entities — Zettelkasten's direct ancestor, *hierarchical* rather than associative.
 
 **Notable for:** the prehistoric Output-first organization scheme that influenced both Locke's *Essay Concerning Human Understanding* and modern Zettelkasten advocates (Ahrens cites it).
@@ -1704,6 +2124,25 @@ Taxon (some versions)
 
 **Source:** [xmlns.com/foaf/spec/](http://xmlns.com/foaf/spec/).
 
+**Visual** (class hierarchy + property edges):
+
+```
+                     foaf:Agent
+                    /     │     \
+              Person   Organization  Group
+                │           │           │
+        ┌───────┼───────┐   │           │
+       knows   made    interest         │
+        │       │        │              │
+      Person  Document  Concept         │
+              (foaf:Document)
+              ├── foaf:Image
+              ├── foaf:PersonalProfileDocument
+              └── (any web doc)
+
+   Properties: name · homepage · mbox · weblog · interest · depiction · depicts
+```
+
 **Classes:** `Agent` / `Person` / `Organization` / `Group` / `Document` / `Image` / `Project` / `OnlineAccount`.
 
 **Properties:** `name`, `homepage`, `knows`, `made`/`maker`, `mbox`, `weblog`, `interest`, `depiction`/`depicts`.
@@ -1717,6 +2156,29 @@ Taxon (some versions)
 ## SKOS — Simple Knowledge Organization System (W3C, 2009)
 
 **Source:** [w3.org/TR/skos-reference/](https://www.w3.org/TR/skos-reference/).
+
+**Visual** (concepts + relationships):
+
+```
+                     skos:ConceptScheme
+                    "Cybersecurity Topics"
+                            │
+                            │ hasTopConcept
+                            ▼
+   ┌─────────────────────  Concept  ─────────────────────┐
+   │                                                      │
+   │  prefLabel:   "Cryptography"                          │
+   │  altLabel:    "Crypto", "Cipher systems"              │
+   │  hiddenLabel: "kryptography" (typo redirect)          │
+   │                                                      │
+   └──────┬─────────────┬──────────────┬─────────────────┘
+          │             │              │
+   broader │     narrower │     related │
+          ▼             ▼              ▼
+       Information     Public-key      Network
+       security        cryptography    security
+       (parent)        (child)         (sibling concept)
+```
 
 **Classes:** `skos:Concept` / `skos:ConceptScheme` / `skos:Collection` / `skos:OrderedCollection`.
 
@@ -2029,6 +2491,31 @@ Statement           = property-value pair + (qualifiers + references + ranks)
 
 **Source:** [en.wikipedia.org/wiki/ISO/IEC_11179](https://en.wikipedia.org/wiki/ISO/IEC_11179).
 
+**Visual** (Data Element decomposition):
+
+```
+                   Data Element
+                  (e.g. "PersonAge_Years")
+                         │
+            ┌────────────┴────────────┐
+            │                         │
+   Data Element Concept       Value Domain
+   "Age of a Person"          "Integer years, 0-150"
+            │                         │
+            │                         │
+   Conceptual Domain           Permissible Values
+   "Age"                       {0, 1, 2, …, 150}
+
+   The 7 parts of ISO/IEC 11179:
+   Part 1: Framework
+   Part 2: Classification                     ◀── what kinds of metadata exist
+   Part 3: Registry metamodel                 ◀── relationships between metadata
+   Part 4: Formulation of definitions
+   Part 5: Naming and identification          ◀── conventions for IDs
+   Part 6: Registration                       ◀── lifecycle: proposed → approved → retired
+   Part 7: Metamodel for data set registration
+```
+
 **Parts 1-7:** Framework / Classification / Registry metamodel / Formulation of definitions / Naming and identification / Registration / Metamodel for data set registration.
 
 **Concepts:** Data Element Concept / Conceptual Domain / Value Domain / Data Element.
@@ -2237,6 +2724,26 @@ Surface    — visual / sensory design
 ## Norman's Design Principles (Don Norman, *Design of Everyday Things*)
 
 **Source:** *Design of Everyday Things* (Norman, 1988 / 2013).
+
+**Visual** (the principles applied to a single artifact):
+
+```
+                          [ ARTIFACT (e.g. a door) ]
+                                   │
+        ┌───────────┬───────┬─────┴─────┬────────┬──────────┐
+        │           │       │           │        │          │
+   Affordance  Signifier Mapping  Feedback  Constraint  Conceptual
+   "I can grab "Pull"     "push side"  "click   "won't open
+   this handle" sticker   feel right    sound"   if locked"  Model
+                                       (the user's
+                                        mental story
+                                        of how it works)
+        │           │       │           │        │          │
+        └────── all support ─┼─ Visibility ─┼─ Consistency ─┘
+                              │              │
+                              ▼              ▼
+                            Discoverability + Learnability
+```
 
 **Principles:** Visibility / Feedback / Constraints / Mapping / Consistency / Affordance (sometimes also Discoverability / Signifiers / Conceptual Model).
 
@@ -2658,6 +3165,36 @@ Portfolio     — strategic themes, value streams, Lean budgets
 
 **Sources:** [docs.github.com — github-flow](https://docs.github.com/en/get-started/quickstart/github-flow) · [nvie.com — GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) · [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com).
 
+**Visuals** (branch topology):
+
+```
+   GitHub Flow:
+   main  ──●─────────●─────────●─────────●─────────●──▶
+            \       / \       /
+             feat-A    feat-B
+              ●──●      ●──●
+              (PR ↑)    (PR ↑)
+
+   GitFlow (Vincent Driessen):
+   main     ──●─────────────────●─────────────────●──▶  (production)
+              │                 │                 │
+              │  release/1.0    │  release/2.0    │
+              │   ●──●          │   ●──●          │
+              │  /    \         │  /    \         │
+   develop  ─●─●──────●─────────●─●──────●────────●────▶  (integration)
+                \      \         │      / \
+                 feat   feat     │  feat    hotfix/1.0.1
+                  ●──●   ●──●    │   ●──●     ●──● (off main, back to both)
+                                 │
+
+   Trunk-Based Development:
+   trunk ──●──●──●──●──●──●──●──●──●──●──●──●──▶
+            \  \  \  \                       │
+             feat short feat                 │  release/2024-Q4
+              ●  ●  ●  ●                      ●──▶ (cut from trunk)
+              (each <1 day, behind feature flags)
+```
+
 | Model | Branches |
 |---|---|
 | **GitHub Flow** | `main` ← short-lived feature branches → PR → deploy. Web-app default. |
@@ -3034,6 +3571,23 @@ Other Academic Areas
 ## Three-Act Structure
 
 **Structure:** Act 1 Setup / Act 2 Confrontation / Act 3 Resolution.
+
+**Visual** (with relative duration):
+
+```
+   ╔════════════╗ ╔══════════════════════════════════╗ ╔════════════╗
+   ║  ACT 1      ║ ║              ACT 2                ║ ║  ACT 3      ║
+   ║   Setup     ║ ║          Confrontation             ║ ║ Resolution ║
+   ╚════════════╝ ╚══════════════════════════════════╝ ╚════════════╝
+   ~25%             ~50%                                  ~25%
+   │                 │                                     │
+   │  inciting      │  midpoint           climax          │  denouement
+   │  incident      │     ●                 ●             │       ●
+   ▼                ▼                                     ▼
+   ────────────────●──────●──────────────────●────────────────●─▶
+                  IP1                       IP2
+                  (1st plot point)         (2nd plot point)
+```
 
 **SEACOW(r) mapping:** Activities (coarse phase scaffold).
 
